@@ -1,0 +1,1 @@
+import java.awt.*;import java.util.*;public interface Prey{	/**	*	Method returns true if obj is a type that can eat 	*	this Animal, returns false otherwise	*	@param	obj	object to be evaluated	*	@return true if obj can eat this Animal, false otherwise	*/	public boolean canItEatMe(Animal obj);}
