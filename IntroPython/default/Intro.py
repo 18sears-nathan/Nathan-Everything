@@ -5,7 +5,7 @@ def new(n):
     elif n>=15:
         return "still works"
     else:
-        "what the fuck"
+        "what the heck"
         
 if 11==11:
     print(new(16))
