@@ -1,0 +1,21 @@
+--> Warning: unable to find function base to single step
+
+--> Warning: Last warning repeats... suppressing more of these
+
+--> source '/Users/18sears_nathan/Desktop/Programs/RedSea.m'
+
+
+
+In docli(builtin) at line 1
+
+    In base(base)
+
+    In base()
+
+    In global()
+
+Error: unable to read data from file Red_Sea_Met_Data - it may be corrupt, or FreeMat may not unde
+rstand the format.  See help load for more information.  The specific error was: filename Red_Sea_
+Met_Data could not be opened
+
+--> Me
