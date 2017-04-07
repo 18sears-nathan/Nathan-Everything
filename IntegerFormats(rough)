@@ -1,0 +1,56 @@
+
+public class integerthing 
+{
+	public static void main(String args[])
+	{	
+		//get
+		EasyReader console = new EasyReader();
+		System.out.print("Number:");
+		int num = console.readInt();
+		//convert to string
+		String numAsStr = Integer.toString(num);
+		System.out.println(numAsStr);
+		//length of string
+		int len = numAsStr.length();
+		System.out.println(len);
+//////////////////////////////WORKS DON'T TOUCH//////////////////////////////////////////
+		//Scientific
+		System.out.println("Scientific");
+		String sci = numAsStr;
+		
+		sci = sci.substring(0,1)+'.'+sci.substring(1,sci.length());
+		System.out.println(sci+"*10^"+(len-1));
+//////////////////////////////FIX ACTUAL VALUE//////////////////////////////////////////
+		//Engineering
+		System.out.println("Engineering");
+		String eng = numAsStr;
+		if(len%3==0)
+		{
+			eng = eng.substring(0,1)+'.'+eng.substring(1,eng.length());
+			System.out.println(eng+"*10^"+(len-1));
+		}
+		else if(len%3==1)
+		{
+			eng = eng.substring(0,2)+'.'+eng.substring(2,eng.length());
+			System.out.println(eng+"*10^"+(len-2));
+		}
+		else if(len%3==2)
+		{
+			eng = eng.substring(0,3)+'.'+eng.substring(3,eng.length());
+			System.out.println(eng+"*10^"+(len-3));
+		}
+//////////////////////////////WORKS DON'T TOUCH//////////////////////////////////////////
+		//commas
+		System.out.println("COMMAS");
+		String com = numAsStr;
+		for(int i=len-1;i>0;i--)
+		{
+			if((len-i)%3==0)
+			{
+				com = com.substring(0,i)+','+com.substring(i,com.length());
+			}
+			
+		}
+		System.out.println(com);
+	}
+}
